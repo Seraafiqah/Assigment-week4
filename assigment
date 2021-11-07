@@ -1,0 +1,53 @@
+package Assigment;
+
+import java.util.Scanner;
+
+public class oneA {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+Scanner ScanMe = new Scanner (System.in);
+
+System.out.println("Enter the number of items: ");
+
+double price1 = ScanMe.nextDouble();
+System.out.println("Enter the price of item: ");
+double quantity1 = ScanMe.nextDouble();
+System.out.println("Enter the quantity of first item: ");
+
+double price2 = ScanMe.nextDouble();
+System.out.println("Enter the price of item: ");
+double quantity2 = ScanMe.nextDouble();
+System.out.println("Enter the quantity of second item: ");
+
+double price3 = ScanMe.nextDouble();
+System.out.println("Enter the price of item: ");
+double quantity3 = ScanMe.nextDouble();
+System.out.println("Enter the quantity of third item: ");
+
+double total1 = (price1 * quantity1);
+System.out.println("Price1: " + total1);
+double total2 = (price2 * quantity2);
+System.out.println("Price2: " + total2);
+double total3 = (price3 * quantity3);
+System.out.println(price3 * quantity3);
+
+double total = (total1 + total2 + total3);
+System.out.println("Total: " + total);
+double discount1 = 20/100*total;
+double discount2 = 10/100*total;
+
+if (total >=100) {
+	System.out.println("Price after discount is RM: " + discount1);
+}else if (total < 100) {
+	System.out.println("Println after discount is RM " + discount2);
+	
+}
+
+	
+	
+	}
+
+
+}
